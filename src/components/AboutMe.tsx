@@ -1,8 +1,8 @@
 export default function AboutMe() {
 	return (
-		<div>
-			<h1>About Me</h1>
-			<p>
+		<div className="container mx-auto">
+			<h1 className="text-center font-bold text-4xl my-3">About Me</h1>
+			<p className="text-center text-lg">
 				I am a Computer Science student at the University of Wisconsin -
 				Madison and have a passion for web-development and the rapidly
 				evolving technologies that come with the field. I am graduating
