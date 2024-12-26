@@ -1,13 +1,12 @@
 {
   "name": "portfolio",
-  "private": true,
   "homepage": "https://BlakeBrown03.github.io/portfolio",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
