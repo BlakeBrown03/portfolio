@@ -50,7 +50,7 @@ export default function Contact() {
 						</a>
 					</button>
 					<h1 className="font-bold text-2xl">Socials</h1>
-					<div className="container grid grid-cols-2 gap-4">
+					<div className="container grid grid-cols-2 gap-4 justify-items-center">
 						<img
 							src="src/logos/github-mark.svg"
 							alt="GitHub"
