@@ -1,50 +1,33 @@
-# React + TypeScript + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my portfolio! This repository showcases my projects and skills as a developer. Below you will find a list of my projects along with brief descriptions and links to their respective repositories.
 
-Currently, two official plugins are available:
+## Projects
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Project 1: [Project Name]
 
-## Expanding the ESLint configuration
+-   **Description:** A brief description of what this project does and its main features.
+-   **Technologies Used:** List of technologies and tools used in this project.
+-   **Repository:** [Link to the repository]
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Project 2: [Project Name]
 
-- Configure the top-level `parserOptions` property like this:
+-   **Description:** A brief description of what this project does and its main features.
+-   **Technologies Used:** List of technologies and tools used in this project.
+-   **Repository:** [Link to the repository]
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Project 3: [Project Name]
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+-   **Description:** A brief description of what this project does and its main features.
+-   **Technologies Used:** List of technologies and tools used in this project.
+-   **Repository:** [Link to the repository]
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## About Me
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+I am a passionate developer with experience in various technologies. I enjoy working on challenging projects and continuously learning new skills. Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/blake-brown03/).
+
+## Contact
+
+If you have any questions or would like to collaborate on a project, please reach out to me at [blake.m.brown03@gmail.com](mailto:blake.m.brown03@gmail.com).
+
+Thank you for visiting my portfolio!

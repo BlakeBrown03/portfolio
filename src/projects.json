@@ -5,5 +5,12 @@
         "image": "meraki-api-dashboard.png",
         "link": "https://github.com/BlakeBrown03/Personal-Meraki",
         "linkText": "View on GitHub"
+    }, 
+    {
+        "title": "CSV to JSON Converter",
+        "description": "A simple Rust command line application that converts CSV files to JSON.",
+        "image": "csv-to-json.png",
+        "link": "https://github.com/BlakeBrown03/csv-to-json",
+        "linkText": "View on GitHub"
     }
 ]
