@@ -10,5 +10,25 @@
     {
         "picture": "src/logos/Bootstrap_logo.svg",
         "title": "Bootstrap"
+    },
+    {
+        "picture": "src/logos/tailwind-svg.svg",
+        "title": "Tailwind"
+    },
+    {
+        "picture": "src/logos/python.svg",
+        "title": "Python"
+    },
+    {
+        "picture": "src/logos/html.svg",
+        "title": "HTML"
+    }, 
+    {
+        "picture": "src/logos/css.svg",
+        "title": "CSS"
+    }, 
+    {
+        "picture": "src/logos/c-sharp.svg",
+        "title": "C#"
     }
 ]

@@ -1,0 +1,9 @@
+[
+    {
+        "title": "Meraki API Dashboard",
+        "description": "A dashboard that uses the Meraki API to display network information.",
+        "image": "meraki-api-dashboard.png",
+        "link": "https://github.com/BlakeBrown03/Personal-Meraki",
+        "linkText": "View on GitHub"
+    }
+]
