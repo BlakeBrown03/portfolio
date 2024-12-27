@@ -1,8 +1,8 @@
 import "./App.css";
-import AboutMe from "./components/AboutMe";
-import Contact from "./components/Contact";
-import Projects from "./components/Projects";
-import Technologies from "./components/Technologies";
+import AboutMe from "./Pages/AboutMe";
+import Contact from "./Pages/Contact";
+import Projects from "./Pages/Projects";
+import Technologies from "./Pages/Technologies";
 
 function App() {
 	return (
