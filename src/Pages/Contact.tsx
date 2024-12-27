@@ -40,10 +40,42 @@ export default function Contact() {
 						</button>
 					</div>
 				</div>
-				<div>
-					<h2>Email</h2>
-					<p>blake.m.brown03@gmail.com</p>
-					<h2>Socials</h2>
+				<div className="text-center">
+					<h1 className="font-bold text-2xl">Email</h1>
+					<button className="my-4">
+						<a
+							href="mailto:blake.m.brown03@gmail.com"
+							className="underline">
+							blake.m.brown03@gmail.com
+						</a>
+					</button>
+					<h1 className="font-bold text-2xl">Socials</h1>
+					<div className="container grid grid-cols-2 gap-4">
+						<img
+							src="src/logos/github-mark.svg"
+							alt="GitHub"
+							style={{
+								width: "50px",
+								height: "50px"
+							}}
+							onClick={() =>
+								window.open("https://github.com/BlakeBrown03")
+							}
+						/>
+						<img
+							src="src/logos/LinkedIn_logo.svg"
+							alt="LinkedIn"
+							style={{
+								width: "50px",
+								height: "50px"
+							}}
+							onClick={() =>
+								window.open(
+									"https://www.linkedin.com/in/blake-brown03"
+								)
+							}
+						/>
+					</div>
 				</div>
 			</div>
 		</div>
