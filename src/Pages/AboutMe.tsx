@@ -9,7 +9,7 @@ export default function AboutMe() {
 				in May of 2025 and will continue to work in this field. I take
 				user experience into account while writing reusable and
 				efficient code. I love combining new technologies, good design
-				and a bit of my personality into all of my projects.{" "}
+				and a bit of my personality into all of my projects.
 			</p>
 		</div>
 	);
