@@ -1,0 +1,14 @@
+[
+    {
+        "picture": "src/logos/React-icon.svg",
+        "title": "React"
+    },
+    {
+        "picture": "src/logos/Typescript_logo_2020.svg",
+        "title": "TypeScript"
+    },
+    {
+        "picture": "src/logos/Bootstrap_logo.svg",
+        "title": "Bootstrap"
+    }
+]
