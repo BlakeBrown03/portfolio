@@ -6,7 +6,7 @@ export default function Contact() {
 	const [message, setMessage] = useState("");
 
 	return (
-		<div className="container mx-auto">
+		<div className="container mx-auto" id="contact">
 			<h1 className="text-center font-bold text-4xl my-3">Contact</h1>
 			<div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
 				<div className="bg-gray-200 p-4 rounded-lg">

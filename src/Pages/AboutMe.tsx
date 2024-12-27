@@ -1,6 +1,6 @@
 export default function AboutMe() {
 	return (
-		<div className="container mx-auto">
+		<div className="container mx-auto" id="about-me">
 			<h1 className="text-center font-bold text-4xl my-3">About Me</h1>
 			<p className="text-center text-lg">
 				I am a Computer Science student at the University of Wisconsin -
