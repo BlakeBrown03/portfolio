@@ -5,7 +5,7 @@ import { GLTFLoader } from "three/examples/jsm/Addons.js";
 export default function Home() {
 	const refContainer = useRef<HTMLDivElement>(null);
 
-	useEffect(async () => {
+	useEffect(() => {
 		const scene = new THREE.Scene();
 		const camera = new THREE.PerspectiveCamera(
 			75,
@@ -20,8 +20,15 @@ export default function Home() {
 		camera.position.z = 5;
 
 		const loader = new GLTFLoader();
-		const loadedData = await loader.loadAsync(
-			"src/technical_difficulties/scene.gltf"
+		loader.load(
+			"path/to/your/model.gltf",
+			gltf => {
+				scene.add(gltf.scene);
+			},
+			undefined,
+			error => {
+				console.error(error);
+			}
 		);
 
 		const animate = function () {
@@ -32,11 +39,11 @@ export default function Home() {
 		animate();
 
 		return () => {
-			document
-				.getElementById("three-container")
-				?.removeChild(renderer.domElement);
+			renderer.dispose();
+			refContainer.current?.removeChild(renderer.domElement);
 		};
 	}, []);
+
 	return (
 		<div
 			ref={refContainer}
