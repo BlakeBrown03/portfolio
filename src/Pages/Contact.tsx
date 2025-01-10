@@ -6,10 +6,10 @@ export default function Contact() {
 	const [message, setMessage] = useState("");
 
 	return (
-		<div className="container mx-auto" id="contact">
+		<div className="container mx-auto dark: text-white" id="contact">
 			<h1 className="text-center font-bold text-4xl my-3">Contact</h1>
 			<div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
-				<div className="bg-gray-200 p-4 rounded-lg">
+				<div className="bg-gray-200 p-4 rounded-lg dark: bg-gray-800">
 					<h1 className="text-center font-bold text-lg">
 						Get in touch
 					</h1>

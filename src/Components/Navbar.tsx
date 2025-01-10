@@ -17,13 +17,13 @@ export default function Navbar() {
 	};
 
 	return (
-		<nav className="bg-gray-200 border-gray-200 sticky top-0">
-			<div className="container mx-auto p-4 flex">
+		<nav className="bg-gray-200 border-gray-200 dark:bg-gray-800 sticky top-0">
+			<div className="container mx-auto p-4 flex dark: text-white">
 				<div className="flex">
-					<h1 className="">Blake Brown</h1>
+					<h1>Blake Brown</h1>
 				</div>
 				<div className="flex justify-end flex-grow items-center">
-					<ul className="flex flex-col md:flex-row space-x-2">
+					<ul className="flex flex-col md:flex-row space-x-2 ">
 						<li>
 							<a
 								href="#about-me"
@@ -53,6 +53,9 @@ export default function Navbar() {
 								onClick={e => handleAnchorClick(e, "contact")}>
 								Contact
 							</a>
+						</li>
+						<li>
+							<button className=""></button>
 						</li>
 					</ul>
 				</div>

@@ -8,14 +8,14 @@ import Technologies from "./Pages/Technologies";
 
 function App() {
 	return (
-		<>
+		<div className="dark: bg-gray-900">
 			<Navbar />
 			<Home />
 			<AboutMe />
 			<Technologies />
 			<Projects />
 			<Contact />
-		</>
+		</div>
 	);
 }
 
