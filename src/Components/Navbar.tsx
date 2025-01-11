@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 export default function Navbar() {
+	const [darkMode, setDarkMode] = useState(false);
+
 	const handleAnchorClick = (
 		e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
 		id: string
@@ -57,7 +61,15 @@ export default function Navbar() {
 							</a>
 						</li>
 						<li>
-							<button className=""></button>
+							<input
+								type="checkbox"
+								name="light-switch"
+								checked={darkMode}
+								onChange={() => {
+									setDarkMode(!darkMode);
+									document.body.classList.toggle("dark");
+								}}
+								className=""></input>
 						</li>
 					</ul>
 				</div>
