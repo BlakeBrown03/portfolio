@@ -3,7 +3,9 @@ import { IoMoon, IoSunny } from "react-icons/io5";
 
 export default function Navbar() {
 	const [darkMode, setDarkMode] = useState(
-		JSON.parse(localStorage.getItem("darkMode") || "false")
+		localStorage.getItem("darkMode") === null
+			? window.matchMedia("(prefers-color-scheme: dark)").matches
+			: JSON.parse(localStorage.getItem("darkMode")!)
 	);
 
 	const handleAnchorClick = (
@@ -23,29 +25,13 @@ export default function Navbar() {
 		}
 	};
 
-	const handleDarkModeToggle = (darkMode: boolean) => {
-		setDarkMode(!darkMode);
+	useEffect(() => {
 		if (darkMode) {
 			document.body.classList.add("dark");
 			localStorage.setItem("darkMode", "true");
 		} else {
 			document.body.classList.remove("dark");
 			localStorage.setItem("darkMode", "false");
-		}
-	};
-
-	useEffect(() => {
-		console.log("darkMode", darkMode);
-		if (localStorage.getItem("darkMode") === null) {
-			localStorage.setItem(
-				"darkMode",
-				window.matchMedia("(prefers-color-scheme: dark)").matches
-					? "true"
-					: "false"
-			);
-			if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-				document.body.classList.add("dark");
-			}
 		}
 	}, []);
 
@@ -89,19 +75,37 @@ export default function Navbar() {
 								Contact
 							</a>
 						</li>
-						<li>{darkMode ? <IoMoon /> : <></>}</li>
+						<li>
+							<IoMoon />
+						</li>
 						<li>
 							<input
 								type="range"
 								min="0"
 								max="1"
 								step="1"
-								value={darkMode ? 1 : 0}
-								onChange={() => handleDarkModeToggle(darkMode)}
+								value={darkMode ? 0 : 1}
+								onChange={() => {
+									if (darkMode) {
+										setDarkMode(false);
+										document.body.classList.remove("dark");
+										localStorage.setItem(
+											"darkMode",
+											"false"
+										);
+									} else {
+										setDarkMode(true);
+										document.body.classList.add("dark");
+										localStorage.setItem(
+											"darkMode",
+											"true"
+										);
+									}
+								}}
 								className="w-10 h-5 rounded-full "
 							/>
 						</li>
-						<li>{!darkMode ? <IoSunny /> : <></>}</li>
+						<li>{<IoSunny />}</li>
 					</ul>
 				</div>
 			</div>
