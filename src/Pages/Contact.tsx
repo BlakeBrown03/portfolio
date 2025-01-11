@@ -51,49 +51,61 @@ export default function Contact() {
 					</button>
 					<h1 className="font-bold text-2xl mb-4">Socials</h1>
 					<div className="container grid grid-cols-4 gap-4 justify-items-center">
-						<img
-							src="src/logos/github-mark.svg"
-							alt="GitHub"
-							style={{
-								width: "50px",
-								height: "50px"
-							}}
-							onClick={() =>
-								window.open("https://github.com/BlakeBrown03")
-							}
-						/>
-						<img
-							src="src/logos/LinkedIn_logo.svg"
-							alt="LinkedIn"
-							style={{
-								width: "50px",
-								height: "50px"
-							}}
-							onClick={() =>
-								window.open(
-									"https://www.linkedin.com/in/blake-brown03"
-								)
-							}
-						/>
-						<img
-							src="src/logos/leetcode.svg"
-							alt="LeetCode"
-							style={{
-								width: "50px",
-								height: "50px"
-							}}
-							onClick={() =>
-								window.open("https://leetcode.com/u/blakeb55/")
-							}
-						/>
-						<img
-							src="src/logos/x.svg"
-							alt="X"
-							style={{ width: "50px", height: "50px" }}
-							onClick={() =>
-								window.open("https://x.com/BlakeBrown_03")
-							}
-						/>
+						<button>
+							<img
+								src="src/logos/github-mark.svg"
+								alt="GitHub"
+								style={{
+									width: "50px",
+									height: "50px"
+								}}
+								onClick={() =>
+									window.open(
+										"https://github.com/BlakeBrown03"
+									)
+								}
+							/>
+						</button>
+						<button>
+							<img
+								src="src/logos/LinkedIn_logo.svg"
+								alt="LinkedIn"
+								style={{
+									width: "50px",
+									height: "50px"
+								}}
+								onClick={() =>
+									window.open(
+										"https://www.linkedin.com/in/blake-brown03"
+									)
+								}
+							/>
+						</button>
+						<button>
+							<img
+								src="src/logos/leetcode.svg"
+								alt="LeetCode"
+								style={{
+									width: "50px",
+									height: "50px"
+								}}
+								onClick={() =>
+									window.open(
+										"https://leetcode.com/u/blakeb55/"
+									)
+								}
+							/>
+						</button>
+						<button>
+							<img
+								src="src/logos/x.svg"
+								alt="X"
+								style={{ width: "50px", height: "50px" }}
+								onClick={() =>
+									window.open("https://x.com/BlakeBrown_03")
+								}
+							/>
+						</button>
 					</div>
 				</div>
 			</div>
