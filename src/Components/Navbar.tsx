@@ -19,11 +19,11 @@ export default function Navbar() {
 	return (
 		<nav className="bg-gray-200 border-gray-200 dark:bg-gray-800 sticky top-0">
 			<div className="container mx-auto p-4 flex dark: text-white">
-				<div className="flex">
+				<div className="flex-grow">
 					<h1>Blake Brown</h1>
 				</div>
-				<div className="flex justify-end flex-grow items-center">
-					<ul className="flex flex-col md:flex-row space-x-2 ">
+				<div className="flex justify-end">
+					<ul className="flex justify-end space-x-2 ">
 						<li>
 							<a
 								href="#about-me"

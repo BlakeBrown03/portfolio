@@ -6,10 +6,10 @@ export default function Contact() {
 	const [message, setMessage] = useState("");
 
 	return (
-		<div className="container mx-auto dark: text-white" id="contact">
+		<div className="container mx-auto dark:text-white" id="contact">
 			<h1 className="text-center font-bold text-4xl my-3">Contact</h1>
 			<div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
-				<div className="bg-gray-200 p-4 rounded-lg dark: bg-gray-800">
+				<div className="bg-gray-200 p-4 rounded-lg dark:bg-gray-800">
 					<h1 className="text-center font-bold text-lg">
 						Get in touch
 					</h1>
@@ -17,18 +17,18 @@ export default function Contact() {
 					<input
 						type="text"
 						onChange={e => setName(e.target.value)}
-						className="w-full p-2 border border-gray-300 rounded-lg"
+						className="w-full p-2 border border-gray-300 dark:border-gray-700 rounded-lg dark:bg-gray-700"
 					/>
 					<h2 className="my-1">Email:</h2>
 					<input
 						type="email"
 						onChange={e => setEmail(e.target.value)}
-						className="w-full p-2 border border-gray-300 rounded-lg"
+						className="w-full p-2 border border-gray-300 dark:border-gray-700 dark:bg-gray-700 rounded-lg"
 					/>
 					<h2 className="my-1">Message:</h2>
 					<textarea
 						onChange={e => setMessage(e.target.value)}
-						className="w-full p-2 border border-gray-300 rounded-lg"
+						className="w-full p-2 border border-gray-300 dark:border-gray-700 dark:bg-gray-700 rounded-lg"
 						rows={5}
 					/>
 					<div className="flex justify-end">
