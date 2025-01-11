@@ -1,7 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { IoMoon, IoSunny } from "react-icons/io5";
 
 export default function Navbar() {
-	const [darkMode, setDarkMode] = useState(false);
+	const [darkMode, setDarkMode] = useState(
+		JSON.parse(localStorage.getItem("darkMode") || "false")
+	);
 
 	const handleAnchorClick = (
 		e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
@@ -17,6 +20,15 @@ export default function Navbar() {
 				top: elementPosition - headerOffset,
 				behavior: "smooth"
 			});
+		}
+	};
+
+	const handleDarkModeToggle = (darkMode: boolean) => {
+		setDarkMode(!darkMode);
+		if (darkMode) {
+			document.body.classList.add("dark");
+		} else {
+			document.body.classList.remove("dark");
 		}
 	};
 
@@ -60,17 +72,19 @@ export default function Navbar() {
 								Contact
 							</a>
 						</li>
+						<li>{darkMode ? <IoMoon /> : <></>}</li>
 						<li>
 							<input
-								type="checkbox"
-								name="light-switch"
-								checked={darkMode}
-								onChange={() => {
-									setDarkMode(!darkMode);
-									document.body.classList.toggle("dark");
-								}}
-								className=""></input>
+								type="range"
+								min="0"
+								max="1"
+								step="1"
+								value={darkMode ? 1 : 0}
+								onChange={() => handleDarkModeToggle(darkMode)}
+								className="w-10 h-5 rounded-full "
+							/>
 						</li>
+						<li>{!darkMode ? <IoSunny /> : <></>}</li>
 					</ul>
 				</div>
 			</div>
