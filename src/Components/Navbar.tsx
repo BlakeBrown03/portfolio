@@ -20,7 +20,9 @@ export default function Navbar() {
 		<nav className="bg-gray-200 border-gray-200 dark:bg-gray-800 sticky top-0">
 			<div className="container mx-auto p-4 flex dark: text-white">
 				<div className="flex-grow">
-					<h1>Blake Brown</h1>
+					<a href="#home" onClick={e => handleAnchorClick(e, "home")}>
+						<h1>Blake Brown</h1>
+					</a>
 				</div>
 				<div className="flex justify-end">
 					<ul className="flex justify-end space-x-2 ">
