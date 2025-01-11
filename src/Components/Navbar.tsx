@@ -27,10 +27,27 @@ export default function Navbar() {
 		setDarkMode(!darkMode);
 		if (darkMode) {
 			document.body.classList.add("dark");
+			localStorage.setItem("darkMode", "true");
 		} else {
 			document.body.classList.remove("dark");
+			localStorage.setItem("darkMode", "false");
 		}
 	};
+
+	useEffect(() => {
+		console.log("darkMode", darkMode);
+		if (localStorage.getItem("darkMode") === null) {
+			localStorage.setItem(
+				"darkMode",
+				window.matchMedia("(prefers-color-scheme: dark)").matches
+					? "true"
+					: "false"
+			);
+			if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+				document.body.classList.add("dark");
+			}
+		}
+	}, []);
 
 	return (
 		<nav className="bg-gray-200 border-gray-200 dark:bg-gray-800 sticky top-0">
