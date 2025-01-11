@@ -3,7 +3,7 @@ import technologies from "../technologies.json";
 
 export default function Technologies() {
 	return (
-		<div className="container mx-auto dark: text-white" id="technologies">
+		<div className="container mx-auto dark:text-white" id="technologies">
 			<h1 className="text-center font-bold text-4xl my-3">
 				Technologies and Tools
 			</h1>
