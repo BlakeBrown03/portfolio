@@ -30,5 +30,21 @@
     {
         "picture": "src/logos/c-sharp.svg",
         "title": "C#"
+    },
+    {
+        "picture": "src/logos/net-core.svg",
+        "title": ".Net Core"
+    },
+    {
+        "picture": "src/logos/Git.svg",
+        "title": "Git"
+    },
+    {
+        "picture": "src/logos/Java.svg",
+        "title": "Java"
+    },
+    {
+        "picture": "src/logos/Rust.svg",
+        "title": "Rust"
     }
 ]

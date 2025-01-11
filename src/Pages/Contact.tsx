@@ -50,7 +50,7 @@ export default function Contact() {
 						</a>
 					</button>
 					<h1 className="font-bold text-2xl mb-4">Socials</h1>
-					<div className="container grid grid-cols-3 gap-4 justify-items-center">
+					<div className="container grid grid-cols-4 gap-4 justify-items-center">
 						<img
 							src="src/logos/github-mark.svg"
 							alt="GitHub"
@@ -84,6 +84,14 @@ export default function Contact() {
 							}}
 							onClick={() =>
 								window.open("https://leetcode.com/u/blakeb55/")
+							}
+						/>
+						<img
+							src="src/logos/x.svg"
+							alt="X"
+							style={{ width: "50px", height: "50px" }}
+							onClick={() =>
+								window.open("https://x.com/BlakeBrown_03")
 							}
 						/>
 					</div>
