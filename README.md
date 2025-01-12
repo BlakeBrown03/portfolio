@@ -4,23 +4,17 @@ Welcome to my portfolio! This repository showcases my projects and skills as a d
 
 ## Projects
 
-### Project 1: [Meraki API Project]
+### Project 1: Meraki API Project
 
 -   **Description:** Meraki API website that allows users to manage multiple organizations, check the health of their devices and add new networks.
 -   **Technologies Used:** I used React and Bootstrap on this project.
--   **Repository:** [Link to the repository]
+-   **Repository:** [GitHub page](https://github.com/BlakeBrown03/Personal-Meraki)
 
-### Project 2: [Project Name]
+### Project 2: CSV to JSON Converter
 
--   **Description:** A brief description of what this project does and its main features.
--   **Technologies Used:** List of technologies and tools used in this project.
--   **Repository:** [Link to the repository]
-
-### Project 3: [Project Name]
-
--   **Description:** A brief description of what this project does and its main features.
--   **Technologies Used:** List of technologies and tools used in this project.
--   **Repository:** [[Link to the repository](https://github.com/BlakeBrown03/Personal-Meraki)]
+-   **Description:** Converts CSV to JSON. It was for the Meraki API Project to check current device health.
+-   **Technologies Used:** Rust, Cargo
+-   **Repository:** [GitHub Page](https://github.com/BlakeBrown03/csv-to-json)
 
 ## About Me
 
