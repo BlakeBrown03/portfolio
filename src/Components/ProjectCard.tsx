@@ -13,11 +13,11 @@ export default function ProjectCard(props: any) {
 					}}
 					className="mx-auto"
 				/>
-				<p className="opacity-0 group-hover:opacity-100 absolute inset-0 bg-gray-200 flex items-center text-black bg-opacity-80">
+				<p className="opacity-0 group-hover:opacity-100 absolute inset-0 bg-gray-200 flex items-center justify-center text-black bg-opacity-80 dark:bg-gray-800 dark:bg-opacity-80 dark:text-white">
 					{props.description}
 				</p>
 			</div>
-			<button className="dark:bg-slate-400 dark:border-slate-400 rounded-md px-2 py-2 my-2">
+			<button className="bg-blue-500 border-green-600 rounded-md px-2 py-2 my-2">
 				<a href={props.link}>{props.linkText}</a>
 			</button>
 		</div>
