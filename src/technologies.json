@@ -1,50 +1,50 @@
 [
     {
-        "picture": "src/logos/React-icon.svg",
+        "picture": "../public/logos/React-icon.svg",
         "title": "React"
     },
     {
-        "picture": "src/logos/Typescript_logo_2020.svg",
+        "picture": "../public/logos/Typescript_logo_2020.svg",
         "title": "TypeScript"
     },
     {
-        "picture": "src/logos/Bootstrap_logo.svg",
+        "picture": "../public/logos/Bootstrap_logo.svg",
         "title": "Bootstrap"
     },
     {
-        "picture": "src/logos/tailwind-svg.svg",
+        "picture": "../public/logos/tailwind-svg.svg",
         "title": "Tailwind"
     },
     {
-        "picture": "src/logos/python.svg",
+        "picture": "../public/logos/python.svg",
         "title": "Python"
     },
     {
-        "picture": "src/logos/html.svg",
+        "picture": "../public/logos/html.svg",
         "title": "HTML"
     }, 
     {
-        "picture": "src/logos/css.svg",
+        "picture": "../public/logos/css.svg",
         "title": "CSS"
     }, 
     {
-        "picture": "src/logos/c-sharp.svg",
+        "picture": "../public/logos/c-sharp.svg",
         "title": "C#"
     },
     {
-        "picture": "src/logos/net-core.svg",
+        "picture": "../public/logos/net-core.svg",
         "title": ".Net Core"
     },
     {
-        "picture": "src/logos/Git.svg",
+        "picture": "../public/logos/Git.svg",
         "title": "Git"
     },
     {
-        "picture": "src/logos/Java.svg",
+        "picture": "../public/logos/Java.svg",
         "title": "Java"
     },
     {
-        "picture": "src/logos/Rust.svg",
+        "picture": "../public/logos/Rust.svg",
         "title": "Rust"
     }
 ]
