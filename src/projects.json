@@ -2,14 +2,14 @@
     {
         "title": "Meraki API Dashboard",
         "description": "A dashboard that uses the Meraki API to display network information.",
-        "image": "src/project-photos/Meraki-Dashboard.png",
+        "image": "./Meraki-Dashboard.png",
         "link": "https://github.com/BlakeBrown03/Personal-Meraki",
         "linkText": "View on GitHub"
-    }, 
-    {
+        }, 
+        {
         "title": "CSV to JSON Converter",
         "description": "A simple Rust command line application that converts CSV files to JSON.",
-        "image": "src/project-photos/csv-logo.png",
+        "image": "./csv-logo.png",
         "link": "https://github.com/BlakeBrown03/csv-to-json",
         "linkText": "View on GitHub"
     }
