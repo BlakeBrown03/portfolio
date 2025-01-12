@@ -17,7 +17,7 @@ export default function ProjectCard(props: any) {
 					{props.description}
 				</p>
 			</div>
-			<button className="bg-blue-500 border-green-600 rounded-md px-2 py-2 my-2">
+			<button className="bg-blue-500 rounded-md px-2 py-2 my-2 text-white">
 				<a href={props.link}>{props.linkText}</a>
 			</button>
 		</div>
