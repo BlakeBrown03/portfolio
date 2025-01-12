@@ -36,7 +36,7 @@ export default function Navbar() {
 	}, []);
 
 	return (
-		<nav className="dark:bg-gray-900 sticky top-0 z-50">
+		<nav className="bg-white dark:bg-gray-900 sticky top-0 z-50">
 			<div className="container mx-auto p-4 flex dark:text-white group">
 				<div className="flex justify-start mr-auto">
 					<a href="#home" onClick={e => handleAnchorClick(e, "home")}>

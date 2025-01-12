@@ -11,7 +11,7 @@ export default function Contact() {
 				Contact
 			</h1>
 			<div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
-				<div className="bg-gray-200 p-4 rounded-lg dark:bg-gray-800">
+				<div className="bg-gray-100 p-4 rounded-lg dark:bg-gray-800">
 					<h1 className="text-center font-bold text-lg">
 						Get in touch
 					</h1>
