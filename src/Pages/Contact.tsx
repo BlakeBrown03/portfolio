@@ -55,7 +55,7 @@ export default function Contact() {
 					<div className="container grid grid-cols-4 gap-4 justify-items-center">
 						<button>
 							<img
-								src="src/logos/github-mark.svg"
+								src="./github-mark.svg"
 								alt="GitHub"
 								style={{
 									width: "50px",
@@ -70,7 +70,7 @@ export default function Contact() {
 						</button>
 						<button>
 							<img
-								src="src/logos/LinkedIn_logo.svg"
+								src="./LinkedIn_logo.svg"
 								alt="LinkedIn"
 								style={{
 									width: "50px",
@@ -85,7 +85,7 @@ export default function Contact() {
 						</button>
 						<button>
 							<img
-								src="src/logos/leetcode.svg"
+								src="./leetcode.svg"
 								alt="LeetCode"
 								style={{
 									width: "50px",
@@ -100,7 +100,7 @@ export default function Contact() {
 						</button>
 						<button>
 							<img
-								src="src/logos/x.svg"
+								src="./x.svg"
 								alt="X"
 								style={{ width: "50px", height: "50px" }}
 								onClick={() =>

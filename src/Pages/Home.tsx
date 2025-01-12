@@ -22,7 +22,7 @@ export default function Home() {
 			id="home"
 			className="container mx-auto grid grid-cols-1 md:grid-cols-2 dark:text-white">
 			<img
-				src="src/project-photos/picture-of-me.jpg"
+				src="./picture-of-me.jpg"
 				alt="Picture of me"
 				className="rounded-full my-10"
 			/>
