@@ -27,7 +27,9 @@ export default function Home() {
 				className="rounded-full my-10"
 			/>
 			<div className="flex flex-col justify-center items-center">
-				<h1 className="text-5xl">Blake Brown</h1>
+				<h1 className="text-5xl text-blue-500 font-metamorphous">
+					Blake Brown
+				</h1>
 				<div>
 					<span className="text-5xl typed-cursor" ref={jobTitles} />
 				</div>

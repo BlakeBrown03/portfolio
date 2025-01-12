@@ -37,22 +37,24 @@ export default function Navbar() {
 
 	return (
 		<nav className="dark:bg-gray-900 sticky top-0 z-50">
-			<div className="container mx-auto p-4 flex dark:text-white">
-				<div className="flex-grow">
+			<div className="container mx-auto p-4 flex dark:text-white group">
+				<div className="flex justify-start mr-auto">
 					<a href="#home" onClick={e => handleAnchorClick(e, "home")}>
-						<h1>Blake Brown</h1>
+						<h1 className="hover:text-blue-500 font-metamorphous text-2xl">
+							Blake Brown
+						</h1>
 					</a>
 				</div>
-				<div className="flex justify-end">
-					<ul className="flex justify-end space-x-2 ">
-						<li>
+				<div className="ml-auto">
+					<ul className="flex justify-end space-x-2">
+						<li className="hover:text-blue-500">
 							<a
 								href="#about-me"
 								onClick={e => handleAnchorClick(e, "about-me")}>
 								About Me
 							</a>
 						</li>
-						<li>
+						<li className="hover:text-blue-500">
 							<a
 								href="#technologies"
 								onClick={e =>
@@ -61,14 +63,14 @@ export default function Navbar() {
 								Technologies
 							</a>
 						</li>
-						<li>
+						<li className="hover:text-blue-500">
 							<a
 								href="#projects"
 								onClick={e => handleAnchorClick(e, "projects")}>
 								Projects
 							</a>
 						</li>
-						<li>
+						<li className="hover:text-blue-500">
 							<a
 								href="#contact"
 								onClick={e => handleAnchorClick(e, "contact")}>
@@ -78,7 +80,7 @@ export default function Navbar() {
 						<li>
 							<IoMoon />
 						</li>
-						<li>
+						<li className="hover:text-blue-500">
 							<input
 								type="range"
 								min="0"

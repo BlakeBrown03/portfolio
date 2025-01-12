@@ -18,7 +18,7 @@ export default function Technologies() {
 		<div
 			className="container mx-auto dark:text-white relative"
 			id="technologies">
-			<h1 className="text-center font-bold text-4xl my-3">
+			<h1 className="text-center font-bold text-4xl my-3 text-blue-500 font-metamorphous">
 				Technologies and Tools
 			</h1>
 			<div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 technology-card">
