@@ -1,13 +1,13 @@
 # Portfolio
 
-Welcome to my portfolio! This repository showcases my projects and skills as a developer. Below you will find a list of my projects along with brief descriptions and links to their respective repositories.
+Welcome to my portfolio! This repository showcases my projects and skills as a developer. Below you will find a list of my projects along with brief descriptions and links to their respective repositories. The website is live [here](https://blakebrown03.github.io/portfolio/)
 
 ## Projects
 
-### Project 1: [Project Name]
+### Project 1: [Meraki API Project]
 
--   **Description:** A brief description of what this project does and its main features.
--   **Technologies Used:** List of technologies and tools used in this project.
+-   **Description:** Meraki API website that allows users to manage multiple organizations, check the health of their devices and add new networks.
+-   **Technologies Used:** I used React and Bootstrap on this project.
 -   **Repository:** [Link to the repository]
 
 ### Project 2: [Project Name]
@@ -20,7 +20,7 @@ Welcome to my portfolio! This repository showcases my projects and skills as a d
 
 -   **Description:** A brief description of what this project does and its main features.
 -   **Technologies Used:** List of technologies and tools used in this project.
--   **Repository:** [Link to the repository]
+-   **Repository:** [[Link to the repository](https://github.com/BlakeBrown03/Personal-Meraki)]
 
 ## About Me
 
