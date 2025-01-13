@@ -70,7 +70,7 @@ export default function Contact() {
 						</button>
 						<button>
 							<img
-								src="./LinkedIn_logo.svg"
+								src="./LinkedIn.svg"
 								alt="LinkedIn"
 								style={{
 									width: "50px",

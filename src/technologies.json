@@ -1,14 +1,14 @@
 [
     {
-        "picture": "./React-icon.svg",
+        "picture": "./React.svg",
         "title": "React"
     },
     {
-        "picture": "./Typescript_logo_2020.svg",
+        "picture": "./TypeScript.svg",
         "title": "TypeScript"
     },
     {
-        "picture": "./Bootstrap_logo.svg",
+        "picture": "./Bootstrap.svg",
         "title": "Bootstrap"
     },
     {
@@ -16,11 +16,11 @@
         "title": "Tailwind"
     },
     {
-        "picture": "./python.svg",
+        "picture": "./Python.svg",
         "title": "Python"
     },
     {
-        "picture": "./html.svg",
+        "picture": "./HTML5.svg",
         "title": "HTML"
     }, 
     {
