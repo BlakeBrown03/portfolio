@@ -1,27 +1,23 @@
 import { useEffect, useRef, useState } from "react";
 import Typed from "typed.js";
 import "./Home.css";
-import { usePollinationsImage } from "@pollinations/react";
 
 export default function Home() {
 	const jobTitles = useRef(null);
-	const [seed, setSeed] = useState(Math.floor(Math.random() * 10000 + 1));
-	const generatedImage = usePollinationsImage(
-		"blonde, male programmer with sunglasses on sitting in his apartment coding with beautiful Chicago skyline in the background",
-		{
-			width: 500,
-			height: 500,
-			seed: seed,
-			model: "flux",
-			nologo: true
-		}
-	);
+	const [index, setIndex] = useState(0);
+	const generatedImage: string[] = [
+		"../portfolio/programmer2.jpg",
+		"../portfolio/programmer3.jpg",
+		"../portfolio/programmer4.jpg",
+		"../portfolio/programmer5.jpg",
+		"../portfolio/programmer6.jpg",
+		"../portfolio/programmer7.jpg"
+	];
 
 	useEffect(() => {
 		const interval = setInterval(() => {
-			setSeed(Math.floor(Math.random() * 10000 + 1));
+			setIndex(Math.floor(Math.random() * 4));
 		}, 15000);
-
 		return () => clearInterval(interval);
 	}, []);
 
@@ -41,9 +37,9 @@ export default function Home() {
 		<div
 			id="home"
 			className="container mx-auto grid grid-cols-1 md:grid-cols-2 dark:text-white">
-			<div className="flex justify-center items-center">
+			<div className="flex justify-center items-center animate-fade-in">
 				<img
-					src={generatedImage}
+					src={generatedImage[index]}
 					alt="Generated Image"
 					className="rounded-full my-10"
 				/>
