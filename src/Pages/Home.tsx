@@ -19,8 +19,8 @@ export default function Home() {
 
 	useEffect(() => {
 		const interval = setInterval(() => {
-			setSeed(Math.floor(Math.random() * 10000));
-		}, 20000);
+			setSeed(Math.floor(Math.random() * 10000 + 1));
+		}, 15000);
 
 		return () => clearInterval(interval);
 	}, []);
