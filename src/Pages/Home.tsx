@@ -37,7 +37,7 @@ export default function Home() {
 		<div
 			id="home"
 			className="container mx-auto grid grid-cols-1 md:grid-cols-2 dark:text-white">
-			<div className="flex justify-center items-center animate-fade-in">
+			<div className="flex justify-center items-center">
 				<img
 					src={generatedImage[index]}
 					alt="Generated Image"
