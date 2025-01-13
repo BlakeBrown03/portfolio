@@ -77,38 +77,45 @@ export default function Navbar() {
 								Contact
 							</a>
 						</li>
-						<li className="inline-block">
-							<IoMoon />
+						<li className="hover:text-blue-500">
+							<a
+								href="../portfolio/Final-Resume-For-Website.pdf"
+								download="Blake Brown Resume">
+								Resume
+							</a>
 						</li>
 						<li className="hover:text-blue-500 inline-block">
-							<input
-								type="range"
-								min="0"
-								max="1"
-								step="1"
-								value={darkMode ? 0 : 1}
-								onChange={() => {
-									if (darkMode) {
-										setDarkMode(false);
-										document.body.classList.remove("dark");
-										localStorage.setItem(
-											"darkMode",
-											"false"
-										);
-									} else {
-										setDarkMode(true);
-										document.body.classList.add("dark");
-										localStorage.setItem(
-											"darkMode",
-											"true"
-										);
-									}
-								}}
-								className="w-11 h-5 rounded-full"
-							/>
-						</li>
-						<li className="inline-block">
-							<IoSunny />
+							<div className="flex items-center space-x-2">
+								<IoMoon />
+								<input
+									type="range"
+									min="0"
+									max="1"
+									step="1"
+									value={darkMode ? 0 : 1}
+									onChange={() => {
+										if (darkMode) {
+											setDarkMode(false);
+											document.body.classList.remove(
+												"dark"
+											);
+											localStorage.setItem(
+												"darkMode",
+												"false"
+											);
+										} else {
+											setDarkMode(true);
+											document.body.classList.add("dark");
+											localStorage.setItem(
+												"darkMode",
+												"true"
+											);
+										}
+									}}
+									className="w-11 h-5 rounded-full"
+								/>
+								<IoSunny />
+							</div>
 						</li>
 					</ul>
 				</div>
