@@ -16,7 +16,7 @@ export default function Home() {
 
 	useEffect(() => {
 		const interval = setInterval(() => {
-			setIndex(Math.floor(Math.random() * 4));
+			setIndex(Math.floor(Math.random() * 6));
 		}, 15000);
 		return () => clearInterval(interval);
 	}, []);
