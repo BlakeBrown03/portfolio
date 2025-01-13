@@ -6,7 +6,9 @@ export default function Contact() {
 	const [message, setMessage] = useState("");
 
 	return (
-		<div className="container mx-auto dark:text-white" id="contact">
+		<div
+			className="container mx-auto dark:text-white dark: bg-slate-900 mb-100"
+			id="contact">
 			<h1 className="text-center font-bold text-4xl my-3 text-blue-500 font-metamorphous">
 				Contact
 			</h1>
