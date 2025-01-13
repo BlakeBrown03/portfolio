@@ -46,7 +46,7 @@ export default function Navbar() {
 					</a>
 				</div>
 				<div className="ml-auto">
-					<ul className="flex justify-end space-x-2">
+					<ul className="flex flex-col md:flex-row justify-end space-y-2 md:space-y-0 md:space-x-2">
 						<li className="hover:text-blue-500">
 							<a
 								href="#about-me"
@@ -77,10 +77,10 @@ export default function Navbar() {
 								Contact
 							</a>
 						</li>
-						<li>
+						<li className="inline-block">
 							<IoMoon />
 						</li>
-						<li className="hover:text-blue-500">
+						<li className="hover:text-blue-500 inline-block">
 							<input
 								type="range"
 								min="0"
@@ -104,10 +104,12 @@ export default function Navbar() {
 										);
 									}
 								}}
-								className="w-11 h-5 rounded-full "
+								className="w-11 h-5 rounded-full"
 							/>
 						</li>
-						<li>{<IoSunny />}</li>
+						<li className="inline-block">
+							<IoSunny />
+						</li>
 					</ul>
 				</div>
 			</div>
