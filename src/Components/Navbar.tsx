@@ -7,6 +7,11 @@ export default function Navbar() {
 			? window.matchMedia("(prefers-color-scheme: dark)").matches
 			: JSON.parse(localStorage.getItem("darkMode")!)
 	);
+	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+	window.addEventListener("resize", () => {
+		setWindowWidth(window.innerWidth);
+	});
 
 	const handleAnchorClick = (
 		e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
@@ -58,9 +63,9 @@ export default function Navbar() {
 						</h1>
 					</a>
 				</div>
-				{window.innerWidth < 768 ? (
+				{windowWidth < 768 ? (
 					<select
-						className="ml-auto dark:bg-gray-900 dark:border-gray-900 border-white"
+						className="ml-auto py-0 dark:bg-gray-900 dark:border-gray-900 border-white"
 						onChange={e => handleSelectChange(e)}>
 						<option value="about-me">About Me</option>
 						<option value="technologies">Technologies</option>
