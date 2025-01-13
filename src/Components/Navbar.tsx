@@ -25,6 +25,19 @@ export default function Navbar() {
 		}
 	};
 
+	const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+		const element = document.getElementById(e.target.value);
+		if (element) {
+			const headerOffset = 90;
+			const elementPosition =
+				element.getBoundingClientRect().top + window.scrollY;
+			window.scrollTo({
+				top: elementPosition - headerOffset,
+				behavior: "smooth"
+			});
+		}
+	};
+
 	useEffect(() => {
 		if (darkMode) {
 			document.body.classList.add("dark");
@@ -45,80 +58,116 @@ export default function Navbar() {
 						</h1>
 					</a>
 				</div>
-				<div className="ml-auto">
-					<ul className="flex flex-col md:flex-row justify-end space-y-2 md:space-y-0 md:space-x-2">
-						<li className="hover:text-blue-500">
-							<a
-								href="#about-me"
-								onClick={e => handleAnchorClick(e, "about-me")}>
-								About Me
-							</a>
-						</li>
-						<li className="hover:text-blue-500">
-							<a
-								href="#technologies"
-								onClick={e =>
-									handleAnchorClick(e, "technologies")
-								}>
-								Technologies
-							</a>
-						</li>
-						<li className="hover:text-blue-500">
-							<a
-								href="#projects"
-								onClick={e => handleAnchorClick(e, "projects")}>
-								Projects
-							</a>
-						</li>
-						<li className="hover:text-blue-500">
-							<a
-								href="#contact"
-								onClick={e => handleAnchorClick(e, "contact")}>
-								Contact
-							</a>
-						</li>
-						<li className="hover:text-blue-500">
-							<a
-								href="../portfolio/Final-Resume-For-Website.pdf"
-								download="Blake Brown Resume">
-								Resume
-							</a>
-						</li>
-						<li className="hover:text-blue-500 inline-block">
-							<div className="flex items-center space-x-2">
-								<IoMoon />
-								<input
-									type="range"
-									min="0"
-									max="1"
-									step="1"
-									value={darkMode ? 0 : 1}
-									onChange={() => {
-										if (darkMode) {
-											setDarkMode(false);
-											document.body.classList.remove(
-												"dark"
-											);
-											localStorage.setItem(
-												"darkMode",
-												"false"
-											);
-										} else {
-											setDarkMode(true);
-											document.body.classList.add("dark");
-											localStorage.setItem(
-												"darkMode",
-												"true"
-											);
-										}
-									}}
-									className="w-11 h-5 rounded-full"
-								/>
-								<IoSunny />
-							</div>
-						</li>
-					</ul>
-				</div>
+				{window.innerWidth < 768 ? (
+					<select
+						className="ml-auto dark:bg-gray-900 dark:border-gray-900 border-white"
+						onChange={e => handleSelectChange(e)}>
+						<option value="about-me">About Me</option>
+						<option value="technologies">Technologies</option>
+						<option value="projects">Projects</option>
+						<option value="contact">Contact</option>
+						<option value="../portfolio/Final-Resume-For-Website.pdf">
+							Resume
+						</option>
+						<option
+							onClick={() => {
+								if (darkMode) {
+									setDarkMode(false);
+									document.body.classList.remove("dark");
+									localStorage.setItem("darkMode", "false");
+								} else {
+									setDarkMode(true);
+									document.body.classList.add("dark");
+									localStorage.setItem("darkMode", "true");
+								}
+							}}>
+							Dark Mode
+						</option>
+					</select>
+				) : (
+					<div className="ml-auto">
+						<ul className="flex md:flex-row justify-end space-y-2 md:space-y-0 md:space-x-2">
+							<li className="hover:text-blue-500">
+								<a
+									href="#about-me"
+									onClick={e =>
+										handleAnchorClick(e, "about-me")
+									}>
+									About Me
+								</a>
+							</li>
+							<li className="hover:text-blue-500">
+								<a
+									href="#technologies"
+									onClick={e =>
+										handleAnchorClick(e, "technologies")
+									}>
+									Technologies
+								</a>
+							</li>
+							<li className="hover:text-blue-500">
+								<a
+									href="#projects"
+									onClick={e =>
+										handleAnchorClick(e, "projects")
+									}>
+									Projects
+								</a>
+							</li>
+							<li className="hover:text-blue-500">
+								<a
+									href="#contact"
+									onClick={e =>
+										handleAnchorClick(e, "contact")
+									}>
+									Contact
+								</a>
+							</li>
+							<li className="hover:text-blue-500">
+								<a
+									href="../portfolio/Final-Resume-For-Website.pdf"
+									download="Blake Brown Resume">
+									Resume
+								</a>
+							</li>
+							<li className="hover:text-blue-500 inline-block">
+								<div className="flex items-center space-x-2">
+									<IoMoon />
+									<input
+										type="range"
+										min="0"
+										max="1"
+										step="1"
+										value={darkMode ? 0 : 1}
+										onChange={() => {
+											if (darkMode) {
+												setDarkMode(false);
+												document.body.classList.remove(
+													"dark"
+												);
+												localStorage.setItem(
+													"darkMode",
+													"false"
+												);
+											} else {
+												setDarkMode(true);
+												document.body.classList.add(
+													"dark"
+												);
+												localStorage.setItem(
+													"darkMode",
+													"true"
+												);
+											}
+										}}
+										className="w-11 h-5 rounded-full"
+									/>
+									<IoSunny />
+								</div>
+							</li>
+						</ul>
+					</div>
+				)}
 			</div>
 		</nav>
 	);
