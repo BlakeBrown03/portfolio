@@ -41,15 +41,13 @@ export default function Home() {
 		<div
 			id="home"
 			className="container mx-auto grid grid-cols-1 md:grid-cols-2 dark:text-white">
-			{generatedImage ? (
+			<div className="flex justify-center items-center">
 				<img
 					src={generatedImage}
 					alt="Generated Image"
 					className="rounded-full my-10"
 				/>
-			) : (
-				<p>Loading...</p>
-			)}
+			</div>
 			<div className="flex flex-col justify-center items-center">
 				<h1 className="text-5xl text-blue-500 font-metamorphous">
 					Blake Brown
