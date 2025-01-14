@@ -8,7 +8,7 @@ import Technologies from "./Pages/Technologies";
 
 function App() {
 	return (
-		<div className="dark:bg-gray-900">
+		<div className="dark:bg-gray-900 height-screen">
 			<Navbar />
 			<Home />
 			<AboutMe />
