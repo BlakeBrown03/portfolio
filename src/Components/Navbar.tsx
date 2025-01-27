@@ -71,7 +71,7 @@ export default function Navbar() {
 						<option value="technologies">Technologies</option>
 						<option value="projects">Projects</option>
 						<option value="contact">Contact</option>
-						<option value="../portfolio/Final-Resume-For-Website.pdf">
+						<option value="../portfolio/final-resume.pdf">
 							Resume
 						</option>
 						<option
@@ -130,7 +130,7 @@ export default function Navbar() {
 							</li>
 							<li className="hover:text-blue-500">
 								<a
-									href="../portfolio/Final-Resume-For-Website.pdf"
+									href="../portfolio/final-resume.pdf"
 									download="Blake Brown Resume">
 									Resume
 								</a>
